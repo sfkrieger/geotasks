@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+        <!--sammy-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>My Journal</title>
+    </head>
+    <body>
+        <div class="_addEntryPage addEntryPage">
+        	<h1>Add Journal Entry</h1>
+        	<div>
+        		<b>Title</b><br />
+        		<input type="text" id="journalEntryTitle" />
+        	</div>
+        	<div>
+        		<b>Body</b><br />
+        		<textarea id="journalEntryBody" ></textarea>
+        	</div>
+        	<div>
+        		<b>Location type</b>
+        		<select name="select_box" id="placeLabel">
+  					<option value="bank">Bank</option>
+ 					<option value="park">Park</option>
+  					<option value="store">Store</option>		
+				</select>
+			</div>
+        	<div class="_addEntry btn">Add Entry</div>
+        	<div class="_cancelEntry btn cancel">Cancel</div>
+			<!--<div class="_viewMap viewMap btn">View Map</div>-->
+        </div>
+        <div class="_entriesPage entriesPage active">
+        	<h1>My Tasks!</h1>
+        	<div class="_addEntry addEntry btn">+</div>
+	        <ul class="entries _entries">
+	        	<li class="loading">
+	        		<h2>Loading Journal...</h2>
+	        	</li>
+	        </ul>
+        </div>
+		
+		<div class="_viewMapPage viewMapPage active">
+        	<!--<h1>Here comes the map</h1>
+        	<div class="_viewMap viewMap btn">View Map</div>  -->
+			<div class="_updateMap updateMap btn" style="margin-bottom: 10px;margin-left: auto;margin-right: auto;display: block;">
+				Display map with tasks by place
+			</div>
+       		<div id="map_canvas" style="width: 400px; height: 300px"></div>
+     
+        </div>
+		
+		
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places"></script> 
+		<script type="text/javascript" src="cordova-2.7.0.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/parse-1.2.7.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="http://www.parsecdn.com/js/parse-1.0.19.min.js"></script>
+		<script type="text/javascript" src="js/googlemap.js"></script>
+		
+		<!-- sammy added
+		<!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=true_or_false"></script>-->
+		<script src="http://code.jquery.com/jquery.js"></script>
+    	<script src="js/bootstrap.min.js"></script>-->
+    	
+        <script type="text/javascript">
+        	app.initialize();
+            MapEl = new GoogleMap();
+			MapEl.initialize();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,202 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(255,255,255,0.25); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+	background: #eeeeee url('../images/bg2.jpg');
+    /*background-color:#E0E0E0; */
+	
+/*     background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%); */
+/*     background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%); */
+/*     background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%); */
+/*     background-image:-webkit-gradient( */
+/*         linear, */
+/*         left top, */
+/*         left bottom, */
+/*         color-stop(0, #A7A7A7), */
+/*         color-stop(0.51, #E4E4E4) */
+/*     ); */
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+h1 {
+    font-size:27px;
+    font-weight:normal;
+    margin:0;
+    overflow:visible;
+    padding:0;
+    text-align:center;
+}
+
+.entriesPage,
+.addEntryPage {
+	margin:10px;
+}
+
+ul.entries {
+	background-color:#F5D0A9;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.entries li {
+	border-bottom: 2px solid #F7BE81;
+}
+
+ul.entries li.loading {
+	text-align:center;
+}
+
+ul.entries li:last-child {
+	border:none;
+}
+
+ul.entries li h2 {
+	margin-bottom:0;
+	font-size:19px;	
+}
+
+ul.entries li p {
+	margin: 5px 0 15px 0;
+	font-size:15px;
+}
+
+/* entries neerby */
+ul.entriesnearby {
+	background-color:#F5D0A9;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.entriesnearby li {
+	border-bottom: 2px solid #F7BE81;
+}
+
+ul.entriesnearby li.loading {
+	text-align:center;
+}
+
+ul.entriesnearby li:last-child {
+	border:none;
+}
+
+ul.entriesnearby li h2 {
+	margin-bottom:0;
+	font-size:19px;	
+}
+
+ul.entriesnearby li p {
+	margin: 5px 0 15px 0;
+	font-size:15px;
+}
+
+
+/* */
+.created {
+	text-align:left;
+}
+
+.meta {
+	position:relative;
+	font-size:11px;	
+	text-transform:none;
+}
+
+.location {
+	text-align:right;
+	position: absolute;
+	right: 0px;
+	top: 0px;	
+}
+
+.formtext {
+	font-size:17px;
+	margin: 20px 0 0 0;
+}
+
+.tasklist{
+	overflow:scroll;
+	height: 200px;
+}
+.btn {
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 12px;
+	line-height: 23px;
+	background-color: #F7BE81;
+	text-align: center;
+	border: 1px solid #CCC;
+	padding: 7px;
+	font-size: 18px;
+	text-shadow: 1px 1px #333;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-size:20px;
+	width: 80%;
+}
+
+select {
+ 	-webkit-appearance:none; /* This is to remove the default appearance */
+     width:100%;
+     min-height:40px;
+     border:#03F 1px solid;
+     border-radius:3px;
+     background-color:#FFFFFF;
+     background-image:url('arrow.jpeg'); /* This is to add the down arrow */
+     background-position:center right;
+     background-repeat:no-repeat;
+     padding-left:15px;
+     font-size:17px;
+}
+
+.cancel {
+
+}
+
+.entriesPage .addEntry {
+	position: absolute;
+	top: -15px;
+	right: 10px;
+	width: 23px;
+}
+
+.addEntryPage {
+	display:none;
+}
+
+input[type=text],
+textarea {
+	width: 99%;
+	font-size:17px;
+	margin-right:10px;
+	height: 35px;
+}

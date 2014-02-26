@@ -1,0 +1,43 @@
+//				  google.maps.event.addListener(marker, 'click', function() {
+//					    infowindow.setContent(place.name);
+//					    infowindow.open(MapEl.map, this);
+//					  });
+//				  google.maps.event.addListener(marker, 'click', function() {
+//					  //iterate through place types
+//					  
+//			
+//					  if(place.types)
+//						 alert('place types exist');
+//						var content = place.name + "\nLocation type: ";
+//					  	for(var i = 0; i < place.types.length; i++){
+//						  if(places.store == true){
+//							  place.types[i] == "store";
+//							  content = content + "store ";
+//						  }else if(place.bank == true){
+//							  place.types[i] == "bank";
+//							  content = content + "bank ";
+//						  }else if(place.park == true){
+//							  place.types[i] == "park";
+//							  alert('park exists ');
+//							  content = content + "park ";
+//						  }
+//						 }
+//					    infowindow.setContent(content);
+//					    infowindow.open(MapEl.map, this);
+//					  });
+
+
+		/*$addEntryPage.find("._viewMap").click(function(e) {
+    		$enrtiesPage.hide();
+    		$addEntryPage.hide();
+			$viewMapPage.show();
+			//MapEl = new GoogleMap();
+			//map = MapEl.initialize();
+			if (geo.isSet == true){
+				//MapEl.addMarker(MapEl.map, 49, -123)
+				MapEl.map.setCenter(new google.maps.LatLng(geo.latitute,geo.longitude));
+				MapEl.map.setZoom(16);
+				MapEl.addMarker(MapEl.map, geo.latitute, geo.longitude)
+			}
+        });*/
+        
